@@ -1,0 +1,92 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-signup {
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signup .checkbox {
+    font-size: 22px;
+    float: left;
+    font-weight: 400;
+    padding-top: 1em;
+}
+
+.form-control3 {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    width: 70%;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin:1em auto;
+}
+
+.form-control4 {
+    position: relative;
+    justify-content:flex-start;
+    box-sizing: border-box;
+    display: flex;
+    height: auto;
+    width: 20%;
+    margin-top: 2pt;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.form-control4 selected {
+    z-index: 2;
+}
+
+.form-signup .form-control2 {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    width: fit-content;
+    padding: 15px;
+    float: left;
+    margin-top: 20px;
+}
+
+.form-signup .form-control2:focus {
+    z-index: 2;
+}
+
+.form-signup input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signup input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signup input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

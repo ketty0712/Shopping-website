@@ -1,0 +1,110 @@
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    position: fixed;
+}
+
+.loader_constant {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    top: 50%;
+    padding: 200px 0;
+    margin: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.loader_constant .img_box {
+    top: -90px;
+    display: flex;
+    transform: scale(0.8);
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.loader_constant .img_item {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    transform: scale(1.1, 1.1);
+    background-image: url(../../product_pic/SKOFF_gsm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.loader_constant svg {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    /* color:orange; */
+    /* clip-path: circle();
+     */
+    animation-name: cake_jump;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 1000;
+}
+
+.loading {
+    position: absolute;
+    background: #FF6100;
+    height: 200px;
+    border-radius: 5px;
+    width: 0%;
+    top: 0;
+    z-index: 998;
+    transition-duration: 0.6s;
+    animation-name: load_ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cake_jump {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes load_ani {
+    0% {
+        box-shadow: #9e7e7e 0px 0px 0px;
+    }
+    50% {
+        box-shadow: #9e7e7e 2px 2px 5px;
+    }
+    100% {
+        box-shadow: #9e7e7e 0px 0px 0px;
+    }
+}
+
+@keyframes load_ani2 {
+    0% {
+        transform: translateY(10px);
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+        transform: scale(0.1, 0.1);
+    }
+}
